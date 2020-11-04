@@ -6,6 +6,8 @@ import { Navbar } from "react-bootstrap";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "../globalStyles";
 import { lightTheme, darkTheme } from "../Themes";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const TopNav = () => {
   const [theme, setTheme] = useState("light");
@@ -30,7 +32,9 @@ const TopNav = () => {
       <>
         <GlobalStyles />
         <Navbar expand="md" collapseOnSelect>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle aria-controls="basic-navbar-nav" id="nav-toggle">
+            <FontAwesomeIcon icon={faBars} />
+          </Navbar.Toggle>
           <div className="ml-auto themeDiv" onClick={themeToggler}>
             {emoji}
           </div>

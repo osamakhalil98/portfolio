@@ -14,6 +14,10 @@ export const GlobalStyles = createGlobalStyle`
       border-radius:4px;
   }
   .navbar{
+      background:${({ theme }) => theme.nav};
       box-shadow:${({ theme }) => theme.lightBoxSh};
+  }
+  #nav-toggle{
+     color:${({ theme }) => theme.text};
   }
   `;
