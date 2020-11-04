@@ -1,0 +1,14 @@
+.tools {
+  overflow: hidden;
+}
+.img-skills {
+  max-width: 100px;
+  margin: auto;
+  width: 100%;
+}
+
+@media (max-width: 645px) {
+  .img-skills {
+    width: 55px;
+  }
+}
