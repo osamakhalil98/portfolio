@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn&display=swap");
+* {
+  box-sizing: border-box;
+}
+.navbar {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  text-align: center;
+}
+.navWrapper {
+  font-family: "Vollkorn", serif;
+}
+.themeDiv {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.navItem {
+  margin-right: 10px;
+  text-align: center;
+  margin: auto;
+}

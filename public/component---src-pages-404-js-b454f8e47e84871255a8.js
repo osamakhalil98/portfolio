@@ -1,0 +1,2 @@
+(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[883],{9616:function(e,t,n){"use strict";n.r(t);var l=n(7294),r=(n(5444),n(1496),n(2359));t.default=function(e){e.data;return l.createElement(l.Fragment,null,l.createElement(r.default,null),l.createElement("div",{className:"d-flex justify-content-center align-items-center ",style:{minHeight:"100vh"}},l.createElement("h1",null,"Sorry, This Route Doesn't Exist!")))}}}]);
+//# sourceMappingURL=component---src-pages-404-js-b454f8e47e84871255a8.js.map

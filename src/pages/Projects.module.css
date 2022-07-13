@@ -1,0 +1,215 @@
+.projectsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.personalProjects {
+  display: flex;
+  justify-content: space-between;
+  width: 75vw;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: auto;
+}
+.gradProject {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.gradDiv {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-left: 0px;
+  padding-right: 0px;
+  border-radius: 4px;
+  overflow: hidden;
+  background-image: url("../assets/images/skin.png");
+  cursor: pointer;
+}
+
+.projectTitle {
+  width: fit-content;
+  text-align: center;
+  padding: 5px 8px;
+  margin: auto;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.jwtDiv {
+  width: 100%;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;
+  background-color: white;
+  padding-left: 0px;
+  padding-right: 0px;
+  border-radius: 4px;
+  overflow: hidden;
+  background-image: url("../assets/images/jwt.png");
+  cursor: pointer;
+}
+.blondedDiv {
+  width: 100%;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-color: white;
+  padding-left: 0px;
+  padding-right: 0px;
+  border-radius: 4px;
+  overflow: hidden;
+  background-image: url("../assets/images/blonded.png");
+  cursor: pointer;
+}
+.innerDiv {
+  width: 100%;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-color: white;
+  padding-left: 0px;
+  padding-right: 0px;
+  border-radius: 4px;
+  overflow: hidden;
+  background-image: url("../assets/images/innernote.png");
+  cursor: pointer;
+}
+.proProjects {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.proDiv {
+  width: 100%;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;
+  padding-left: 0px;
+  padding-right: 0px;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: white;
+  background-image: url("../assets/images/logzee.png");
+  cursor: pointer;
+}
+.projectDesc {
+  display: none;
+  font-style: italic;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  padding: 5px 5px;
+  border-radius: 6px;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+.projectDesc::after {
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.5) transparent transparent transparent;
+}
+.donationDiv {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;
+  padding-left: 0px;
+  padding-right: 0px;
+  border-radius: 4px;
+  overflow: hidden;
+  background-image: url("../assets/images/sadaqahti.webp");
+
+  cursor: pointer;
+}
+.projectsProWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.ProjectsCard {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border-radius: 4px;
+  padding-left: 0px;
+  padding-right: 0px;
+  position: relative;
+  width: 320px;
+  max-width: 350px;
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    0.3s box-shadow,
+    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+}
+
+.dottedBorderBlue {
+  border-bottom: 4px dotted blue;
+}
+.dottedBorderYellow {
+  border-bottom: 4px dotted yellow;
+}
+.dottedBorderRed {
+  border-bottom: 4px dotted red;
+}
+.ProjectsCard:hover {
+  animation-name: noShadow;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  transform: scale(1.05);
+}
+.ProjectsCard:hover .projectDesc {
+  display: inherit;
+}
+@keyframes noShadow {
+  0% {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  100% {
+    box-shadow: none;
+  }
+}
+@media (max-width: 1100px) {
+  .personalProjects {
+    display: flex;
+    flex-direction: column;
+  }
+  .ProjectsCard {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 700px) {
+  .proProjects {
+    display: flex;
+    flex-direction: column;
+  }
+  .projectTitle {
+    margin-top: 40px;
+  }
+  .blondedDiv {
+    margin-top: 35px;
+  }
+}
